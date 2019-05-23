@@ -1,0 +1,21 @@
+<html>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="resize.js"></script>
+
+<body>
+<div class="container">
+    <div>元画像(512x512)</div>
+    <img src="lena_std.png" />
+</div>
+
+<div class="container">
+    <div>img要素のwidth,height属性で50%に縮小(256x256)</div>
+    <img src="lena_std.png" width=256 height=256 />
+</div>
+
+<div class="container">
+    <div>canvasを使って実際のサイズを縮小(256x256)</div>
+    <img id="dst"/>
+</div>
+</body>
+</html>
